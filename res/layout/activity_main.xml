@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/epsPastEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="EPSpast"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/epsFutureEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="EPSfuture"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/epsPeriodEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="EPSperiod"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1" >
+
+        <EditText
+            android:id="@+id/epsCurrentEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="EPScurrent"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/currentPriceEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="CurrentPrice"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/epsNperiodEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="EPSNperiod"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2" >
+
+        <EditText
+            android:id="@+id/peMinEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="PEmin"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/peMaxEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="PEmax"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startCalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:text="Start" />
+
+    <EditText
+        android:id="@+id/resultEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/startCalBtn"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
